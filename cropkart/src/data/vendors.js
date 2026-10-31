@@ -1,0 +1,365 @@
+/**
+ * Mock Vendor/Farmer Data for CropKart
+ * Multiple verified farmers per crop for wholesaler price and quality comparison.
+ * Ready for future Firebase Firestore integration.
+ */
+
+export const mockVendors = [
+  // Tomato Vendors
+  {
+    id: "v-tom-1",
+    cropId: "crop-1",
+    farmerName: "Ramesh Patel",
+    farmName: "Sahyadri Bio-Farms",
+    location: "Nashik, Maharashtra",
+    price: 27,
+    availableStock: 1400,
+    minOrder: 100,
+    rating: 4.9,
+    reviewsCount: 28,
+    phone: "+91 98231 44521",
+    experience: "14 yrs farming",
+    verified: true,
+    harvestTime: "Harvested yesterday"
+  },
+  {
+    id: "v-tom-2",
+    cropId: "crop-1",
+    farmerName: "Santosh Meena",
+    farmName: "Meena Organic Orchards",
+    location: "Dindori, Maharashtra",
+    price: 28,
+    availableStock: 1200,
+    minOrder: 80,
+    rating: 4.8,
+    reviewsCount: 19,
+    phone: "+91 94142 88710",
+    experience: "9 yrs farming",
+    verified: true,
+    harvestTime: "Harvested today"
+  },
+  {
+    id: "v-tom-3",
+    cropId: "crop-1",
+    farmerName: "Anand Sharma",
+    farmName: "Shree Krishna Agri Trust",
+    location: "Sangli, Maharashtra",
+    price: 26,
+    availableStock: 900,
+    minOrder: 150,
+    rating: 4.6,
+    reviewsCount: 14,
+    phone: "+91 91223 55431",
+    experience: "18 yrs farming",
+    verified: true,
+    harvestTime: "Harvested 2 days ago"
+  },
+
+  // Potato Vendors
+  {
+    id: "v-pot-1",
+    cropId: "crop-2",
+    farmerName: "Suresh Kumar Yadav",
+    farmName: "Braj Agro Cold Fields",
+    location: "Agra, Uttar Pradesh",
+    price: 18,
+    availableStock: 4500,
+    minOrder: 200,
+    rating: 4.7,
+    reviewsCount: 34,
+    phone: "+91 97581 22904",
+    experience: "20 yrs farming",
+    verified: true,
+    harvestTime: "Freshly sorted"
+  },
+  {
+    id: "v-pot-2",
+    cropId: "crop-2",
+    farmerName: "Mahesh Choudhary",
+    farmName: "Yamuna Green Fields",
+    location: "Aligarh, Uttar Pradesh",
+    price: 17.5,
+    availableStock: 3700,
+    minOrder: 250,
+    rating: 4.5,
+    reviewsCount: 22,
+    phone: "+91 98370 19283",
+    experience: "11 yrs farming",
+    verified: true,
+    harvestTime: "Cold-store certified"
+  },
+
+  // Onion Vendors
+  {
+    id: "v-on-1",
+    cropId: "crop-3",
+    farmerName: "Bhausaheb Shinde",
+    farmName: "Godavari Agri Producers",
+    location: "Lasalgaon, Maharashtra",
+    price: 32,
+    availableStock: 3200,
+    minOrder: 150,
+    rating: 4.9,
+    reviewsCount: 45,
+    phone: "+91 98220 77312",
+    experience: "22 yrs farming",
+    verified: true,
+    harvestTime: "Naturally cured"
+  },
+  {
+    id: "v-on-2",
+    cropId: "crop-3",
+    farmerName: "Nitin Jagtap",
+    farmName: "Panchavati Red Farms",
+    location: "Niphad, Maharashtra",
+    price: 31,
+    availableStock: 2500,
+    minOrder: 200,
+    rating: 4.6,
+    reviewsCount: 23,
+    phone: "+91 97654 32189",
+    experience: "8 yrs farming",
+    verified: true,
+    harvestTime: "Fresh stock"
+  },
+
+  // Wheat Vendors
+  {
+    id: "v-wh-1",
+    cropId: "crop-4",
+    farmerName: "Gurpreet Singh",
+    farmName: "Golden Punjab Agro Estates",
+    location: "Ludhiana, Punjab",
+    price: 24,
+    availableStock: 8000,
+    minOrder: 500,
+    rating: 5.0,
+    reviewsCount: 52,
+    phone: "+91 98722 44109",
+    experience: "25 yrs farming",
+    verified: true,
+    harvestTime: "Season harvest"
+  },
+  {
+    id: "v-wh-2",
+    cropId: "crop-4",
+    farmerName: "Harvinder Dhillon",
+    farmName: "Malwa Grain Producers",
+    location: "Bathinda, Punjab",
+    price: 23.5,
+    availableStock: 6000,
+    minOrder: 500,
+    rating: 4.8,
+    reviewsCount: 37,
+    phone: "+91 94170 33821",
+    experience: "16 yrs farming",
+    verified: true,
+    harvestTime: "Cleaned & packed"
+  },
+
+  // Rice Vendors
+  {
+    id: "v-rc-1",
+    cropId: "crop-5",
+    farmerName: "Kuldeep Gill",
+    farmName: "Karnal Basmati Heritage",
+    location: "Karnal, Haryana",
+    price: 65,
+    availableStock: 5000,
+    minOrder: 250,
+    rating: 4.9,
+    reviewsCount: 64,
+    phone: "+91 98960 11234",
+    experience: "19 yrs farming",
+    verified: true,
+    harvestTime: "Aged 12 months"
+  },
+  {
+    id: "v-rc-2",
+    cropId: "crop-5",
+    farmerName: "Jasbir Virk",
+    farmName: "Taraori Fragrant Fields",
+    location: "Kurukshetra, Haryana",
+    price: 63.5,
+    availableStock: 4500,
+    minOrder: 200,
+    rating: 4.8,
+    reviewsCount: 30,
+    phone: "+91 94160 55890",
+    experience: "13 yrs farming",
+    verified: true,
+    harvestTime: "Moisture-tested"
+  },
+
+  // Cauliflower Vendors
+  {
+    id: "v-caul-1",
+    cropId: "crop-6",
+    farmerName: "Rajesh Verma",
+    farmName: "Malwa Fresh Greens",
+    location: "Indore, Madhya Pradesh",
+    price: 22,
+    availableStock: 1300,
+    minOrder: 50,
+    rating: 4.6,
+    reviewsCount: 18,
+    phone: "+91 98260 77812",
+    experience: "10 yrs farming",
+    verified: true,
+    harvestTime: "Morning harvest"
+  },
+  {
+    id: "v-caul-2",
+    cropId: "crop-6",
+    farmerName: "Dinesh Patidar",
+    farmName: "Patidar Agro Valley",
+    location: "Ujjain, Madhya Pradesh",
+    price: 21,
+    availableStock: 1100,
+    minOrder: 60,
+    rating: 4.5,
+    reviewsCount: 13,
+    phone: "+91 99264 12389",
+    experience: "7 yrs farming",
+    verified: true,
+    harvestTime: "Today"
+  },
+
+  // Cabbage Vendors
+  {
+    id: "v-cab-1",
+    cropId: "crop-7",
+    farmerName: "Vikram Patil",
+    farmName: "Sahyadri Crisp Farms",
+    location: "Pune, Maharashtra",
+    price: 16,
+    availableStock: 1800,
+    minOrder: 50,
+    rating: 4.5,
+    reviewsCount: 16,
+    phone: "+91 98812 34567",
+    experience: "12 yrs farming",
+    verified: true,
+    harvestTime: "Today"
+  },
+  {
+    id: "v-cab-2",
+    cropId: "crop-7",
+    farmerName: "Sunil Thite",
+    farmName: "Khed Agro Syndicate",
+    location: "Khed, Maharashtra",
+    price: 15.5,
+    availableStock: 1300,
+    minOrder: 60,
+    rating: 4.4,
+    reviewsCount: 11,
+    phone: "+91 97631 88902",
+    experience: "8 yrs farming",
+    verified: true,
+    harvestTime: "Yesterday"
+  },
+
+  // Apple Vendors
+  {
+    id: "v-app-1",
+    cropId: "crop-8",
+    farmerName: "Prem Prakash Sharma",
+    farmName: "Himalayan Apple Highlands",
+    location: "Kotkhai, Shimla, HP",
+    price: 110,
+    availableStock: 2400,
+    minOrder: 100,
+    rating: 5.0,
+    reviewsCount: 71,
+    phone: "+91 98160 44321",
+    experience: "26 yrs farming",
+    verified: true,
+    harvestTime: "Tray packed"
+  },
+  {
+    id: "v-app-2",
+    cropId: "crop-8",
+    farmerName: "Rohan Negi",
+    farmName: "Kinnaur Orchard Estates",
+    location: "Thanedhar, Shimla, HP",
+    price: 108,
+    availableStock: 1800,
+    minOrder: 100,
+    rating: 4.8,
+    reviewsCount: 41,
+    phone: "+91 94180 99876",
+    experience: "15 yrs farming",
+    verified: true,
+    harvestTime: "Hand-graded"
+  },
+
+  // Banana Vendors
+  {
+    id: "v-ban-1",
+    cropId: "crop-9",
+    farmerName: "Kishor Mahajan",
+    farmName: "Khandesh Banana Hub",
+    location: "Jalgaon, Maharashtra",
+    price: 35,
+    availableStock: 3000,
+    minOrder: 100,
+    rating: 4.8,
+    reviewsCount: 33,
+    phone: "+91 98234 56789",
+    experience: "17 yrs farming",
+    verified: true,
+    harvestTime: "Chamber-ready"
+  },
+  {
+    id: "v-ban-2",
+    cropId: "crop-9",
+    farmerName: "Pravin Patil",
+    farmName: "Tapi Valley Banana Co.",
+    location: "Raver, Maharashtra",
+    price: 34,
+    availableStock: 2200,
+    minOrder: 120,
+    rating: 4.7,
+    reviewsCount: 15,
+    phone: "+91 94222 34109",
+    experience: "11 yrs farming",
+    verified: true,
+    harvestTime: "Direct harvest"
+  },
+
+  // Chilli Vendors
+  {
+    id: "v-chl-1",
+    cropId: "crop-10",
+    farmerName: "Subba Rao G.",
+    farmName: "Andhra Spice Fields",
+    location: "Guntur, Andhra Pradesh",
+    price: 45,
+    availableStock: 1600,
+    minOrder: 40,
+    rating: 4.8,
+    reviewsCount: 29,
+    phone: "+91 98480 33219",
+    experience: "21 yrs farming",
+    verified: true,
+    harvestTime: "Freshly plucked"
+  },
+
+  // Mango Vendors
+  {
+    id: "v-man-1",
+    cropId: "crop-11",
+    farmerName: "Ganesh Kelkar",
+    farmName: "Devgad Alphonso Groves",
+    location: "Ratnagiri, Maharashtra",
+    price: 160,
+    availableStock: 2200,
+    minOrder: 60,
+    rating: 5.0,
+    reviewsCount: 62,
+    phone: "+91 98224 88712",
+    experience: "30 yrs farming",
+    verified: true,
+    harvestTime: "GI certified"
+  }
+];
