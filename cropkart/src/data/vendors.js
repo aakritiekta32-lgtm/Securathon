@@ -14,7 +14,7 @@ export const mockVendors = [
     location: "Nashik, Maharashtra",
     price: 27,
     availableStock: 1400,
-    minOrder: 100,
+    minOrder: 15,
     rating: 4.9,
     reviewsCount: 28,
     phone: "+91 98231 44521",

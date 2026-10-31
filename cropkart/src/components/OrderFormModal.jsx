@@ -7,7 +7,7 @@ export const OrderFormModal = ({ crop, vendor, onClose, onSubmitOrder }) => {
   const effectiveStock = vendor ? vendor.availableStock : (crop ? crop.totalStock : 0);
   const effectiveMinOrder = vendor ? vendor.minOrder : (crop ? crop.minOrder : 50);
   const vendorName = vendor ? vendor.farmerName : "Verified Regional Farmer Group";
-  const vendorLocation = vendor ? vendor.location : crop.location;
+  const vendorLocation = vendor?.location || crop?.location || 'Not specified';
 
   const [quantity, setQuantity] = useState(effectiveMinOrder);
   const [fullName, setFullName] = useState('');
@@ -242,7 +242,7 @@ export const OrderFormModal = ({ crop, vendor, onClose, onSubmitOrder }) => {
               disabled={isSubmitting}
             >
               <TruckIcon size={18} />
-              <span>{isSubmitting ? 'Placing Order...' : 'Confirm & Place Order'}</span>
+              <span>{isSubmitting ? 'Submitting...' : 'Submit Order'}</span>
             </button>
           </div>
         </form>

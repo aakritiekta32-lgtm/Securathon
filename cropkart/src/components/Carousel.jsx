@@ -4,6 +4,7 @@ import { ChevronLeftIcon, ChevronRightIcon, ArrowRightIcon, SproutIcon, ShieldCh
 const slidesData = [
   {
     id: 1,
+    image: "/slide1.jpg",
     tag: "Direct Farm Sourcing",
     heading: "Farming Smarter Together",
     description: "Connecting farmers directly with wholesalers.",
@@ -14,6 +15,7 @@ const slidesData = [
   },
   {
     id: 2,
+    image: "/slide2.jpg",
     tag: "Quality & Freshness Assured",
     heading: "Fresh Produce, Better Prices",
     description: "Discover quality agricultural products directly from farmers.",
@@ -24,6 +26,7 @@ const slidesData = [
   },
   {
     id: 3,
+    image: "/slide3.png",
     tag: "Next-Gen Agri Commerce",
     heading: "Grow. Connect. Prosper.",
     description: "Making agricultural trade simpler, smarter and more accessible.",
@@ -84,23 +87,23 @@ export const Carousel = ({ onGetStarted }) => {
           else slideClass += " next";
 
           return (
-            <div 
-              key={slide.id} 
-              className={`${slideClass} ${slide.bgTheme}`}
-              style={{ display: isActive ? 'flex' : 'none' }}
-            >
-              {/* Decorative scenic agricultural vector background */}
-              <div className="slide-background-art">
-                <div className="glow-sphere sphere-1" />
-                <div className="glow-sphere sphere-2" />
-                
-                {/* SVG Farm Contour Waves */}
-                <svg className="farm-contour-svg" viewBox="0 0 1440 400" fill="none" preserveAspectRatio="none">
-                  <path d="M0 240C240 180 480 300 720 220C960 140 1200 260 1440 200V400H0V240Z" fill="rgba(16, 185, 129, 0.12)" />
-                  <path d="M0 280C280 220 540 330 820 270C1100 210 1320 310 1440 260V400H0V280Z" fill="rgba(5, 150, 105, 0.2)" />
-                  <path d="M0 330C320 270 600 370 900 320C1200 270 1350 350 1440 320V400H0V330Z" fill="rgba(4, 120, 87, 0.35)" />
-                </svg>
-              </div>
+  <div
+    key={slide.id}
+    className={`${slideClass} ${slide.bgTheme}`}
+    style={{
+      display: isActive ? 'flex' : 'none',
+      backgroundImage: `linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.65) 0%,
+        rgba(0, 0, 0, 0.35) 55%,
+        rgba(0, 0, 0, 0.10) 100%
+      ), url("${slide.image}")`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}
+  >
+             
 
               {/* Slide Content */}
               <div className="slide-content-container">

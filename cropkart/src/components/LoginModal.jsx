@@ -3,7 +3,7 @@ import { XIcon, UserIcon, ShieldCheckIcon, SproutIcon } from './Icons';
 
 export const LoginModal = ({ user, onClose, onLogin, onLogout }) => {
   const [role, setRole] = useState('wholesaler');
-  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
   const [name, setName] = useState('');
 
   const handleDemoLogin = (selectedRole) => {

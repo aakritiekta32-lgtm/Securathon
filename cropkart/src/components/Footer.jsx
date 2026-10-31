@@ -34,17 +34,7 @@ export const Footer = ({ onNavigate }) => {
           </ul>
         </div>
 
-        {/* Col 3: Key Agri Hubs */}
-        <div className="footer-col">
-          <h4 className="footer-col-title">Direct Farm Hubs</h4>
-          <ul className="footer-links">
-            <li><span>Nashik Onion & Tomato Belt</span></li>
-            <li><span>Ludhiana Wheat & Paddy Hub</span></li>
-            <li><span>Agra & Aligarh Potato Storage</span></li>
-            <li><span>Shimla & Kinnaur Apple Valleys</span></li>
-            <li><span>Jalgaon Banana Direct Cooperatives</span></li>
-          </ul>
-        </div>
+        
 
         {/* Col 4: Platform Notice */}
         <div className="footer-col">
@@ -54,7 +44,7 @@ export const Footer = ({ onNavigate }) => {
           </p>
           <div className="footer-helpline">
             <PhoneIcon size={16} />
-            <span>Kisan Trade Helpline: 1800-CROP-KART</span>
+            <span>Kisan Trade Helpline: 9661927508</span>
           </div>
         </div>
       </div>
