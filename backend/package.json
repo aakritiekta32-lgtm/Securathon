@@ -1,0 +1,27 @@
+﻿{
+  "name": "cropkart-backend",
+  "version": "1.0.0",
+  "description": "CropKart agricultural marketplace backend with Firebase and WhatsApp Cloud API bot integration",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "cropkart",
+    "express",
+    "firebase",
+    "whatsapp-cloud-api",
+    "marketplace"
+  ],
+  "author": "CropKart Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "firebase-admin": "^13.1.0"
+  }
+}
